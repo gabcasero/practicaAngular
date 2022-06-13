@@ -1,0 +1,8 @@
+<cm-header
+  class="navbar-nav navbar-light"
+  [menuElements]="menuElements"
+  (rightElementClicked)="saludar()"
+  [(tema)]="title"
+></cm-header>
+<router-outlet></router-outlet>
+<cm-loader *ngIf="loading"></cm-loader>
